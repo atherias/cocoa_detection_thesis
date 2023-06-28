@@ -69,7 +69,7 @@ Sub-questions
 - What is the impact of SAR and MSI training data on the detection of intercrop cocoa?
 
 ## 2.2 Methods for processing the data
-All relevant functions in preprocessing.py.
+All relevant functions in preprocessing.py
 
 ### 2.2.1 Satellite data
 S1 and S2 datasets are downloaded via the WEkEO JupyterHub (Earth Observation Server) using the WEkEO Harmonized Data Access API. The MSI datasets (Level 2A) are filtered to contain less than 15% cloud cover and efforts are made to select imagery distributed across the wet and dry seasons. The year 2020-2021 is selected because it contains datasets that match as closely as possible to an even distribution across the seasons, and because this timeline overlaps with the ground truth dataset collection dates. The SAR datasets (Level 1C) are filtered to IW mode and GRD products only. For the dry season stack, the images are selected as close as possible to the dates of MSI data.
@@ -91,7 +91,7 @@ After collecting the ground truth polygons from Meridia, the following steps are
 3. If so, crop and save a copy of the label raster, save a corresponding cropped portion of the masked virtual raster.
 
 ## 2.3 Methods for machine learning
-All relevant code in unet-code.ipynb.
+All relevant code in unet-code.ipynb
 
 ### 2.3.1 Architecture and hyperparameters
 The U-NET architecture is adapted from the cocoa segmentation work of [Filella, 2018](https://ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/Student_Theses/BA_BonetFilella.pdf) and the Jupyter notebook U-NET implementation by [Bhatia,2021](https://github.com/VidushiBhatia/U-Net-Implementation) with the following parameters:
@@ -106,3 +106,6 @@ The U-NET architecture is adapted from the cocoa segmentation work of [Filella, 
 A 10% test split is applied using the sci-kit learn library (train test split function). The 10-fold validation and training data split is implemented using the sci-kit learn k-fold function, and a model is trained using 10 different splits.
 
 ## 2.4 Methods for analysis
+All relevant code in analysis.py
+
+
