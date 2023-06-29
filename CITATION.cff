@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you reuse or adapt this code, please cite it as below."
+authors:
+  - family-names: Therias
+    given-names: Adele
+title: "Integrating radar and multi-spectral data to detect cocoa crops: a deep learning approach (code)"
+version: 1.0.0
+date-released: 20223-06-21
