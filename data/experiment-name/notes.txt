@@ -1,0 +1,1 @@
+These folders are filled with the running of the "create dataset" function. Replace "experiment-name" with the dataset name, and update the value in preprocessing.py

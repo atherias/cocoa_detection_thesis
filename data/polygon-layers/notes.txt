@@ -1,0 +1,1 @@
+Place ground truth polygon layer(s) in this folder. All ground truth must be reprojected, an additional "value" field added, any overlaps removed and all vector layers merged.
